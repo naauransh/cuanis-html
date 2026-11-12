@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="id">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Dashboard · Cuanis</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Instrument+Serif&family=DM+Sans:wght@400;500;700&family=Caveat:wght@600&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <!-- Opsional: kalau mau pakai Tailwind di halaman ini, aktifkan baris di bawah (letakkan setelah style.css)
+<script src="https://cdn.tailwindcss.com"></script> -->
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="topbar">
+      <nav class="nav eyebrow" aria-label="Menu utama">
+        <a href="dashboard.html" aria-current="page">Dashboard</a>
+        <a href="transaksi.html">Transaksi</a>
+        <a href="budget.html">Budget</a>
+        <a href="kategori.html">Kategori</a>
+
+        <!-- Tombol Keluar ikut di dalam nav biar style-nya sama persis -->
+        <form action="index.html" method="get" style="display: inline; margin: 0;">
+          <button type="submit"
+            style="background: none; border: none; cursor: pointer; font: inherit; color: inherit; padding: 0; text-transform: uppercase;"
+            title="Keluar">
+            <svg style="width: 12px; height: 12px; vertical-align: middle; margin-right: 2px;"
+              xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"></path>
+              <polyline points="16 17 21 12 16 7"></polyline>
+              <line x1="21" x2="9" y1="12" y2="12"></line>
+            </svg>
+            Keluar
+          </button>
+        </form>
+      </nav>
+      <a class="logo" href="index.html">cuanis</a>
+      <span class="avatar-user" aria-label="Akun Sari">S</span>
+    </div>
+  </header>
+
+
+  <main class="container">
+    <div class="page-head">
+      <div>
+        <div class="eyebrow">Halo, Sari</div>
+        <h1>Ringkasan November</h1>
+      </div><a class="btn" href="tambah-transaksi.html">Tambah transaksi</a>
+    </div>
+    <div class="alert" role="status">Budget Hiburan sudah terpakai 127%. Kurangi dulu jajan streaming bulan ini ya!
+    </div>
+    <div class="stats">
+      <div class="stat bg-pink"><span class="eyebrow">Pemasukan</span><strong>Rp8.500.000</strong></div>
+      <div class="stat bg-peach"><span class="eyebrow">Pengeluaran</span><strong>Rp5.230.000</strong></div>
+      <div class="stat bg-lavender"><span class="eyebrow">Saldo</span><strong>Rp3.270.000</strong></div>
+    </div>
+    <div class="row">
+      <section class="card grow-2">
+        <div class="chart-head">
+          <h2>Pemasukan vs pengeluaran</h2>
+          <div class="legend"><span><i class="in"></i>Pemasukan</span><span><i class="out"></i>Pengeluaran</span><span
+              class="muted">(juta Rp)</span></div>
+        </div>
+        <div class="chart" role="img" aria-label="Grafik batang pemasukan dan pengeluaran Juni sampai November">
+          <div class="chart-group">
+            <div class="bar-wrap"><span>7,5</span>
+              <div class="chart-bar bar-income" style="--v:7.5"></div>
+            </div>
+            <div class="bar-wrap"><span>5,1</span>
+              <div class="chart-bar bar-expense" style="--v:5.1"></div>
+            </div>
+          </div>
+          <div class="chart-group">
+            <div class="bar-wrap"><span>8,0</span>
+              <div class="chart-bar bar-income" style="--v:8.0"></div>
+            </div>
+            <div class="bar-wrap"><span>6,0</span>
+              <div class="chart-bar bar-expense" style="--v:6.0"></div>
+            </div>
+          </div>
+          <div class="chart-group">
+            <div class="bar-wrap"><span>8,0</span>
+              <div class="chart-bar bar-income" style="--v:8.0"></div>
+            </div>
+            <div class="bar-wrap"><span>4,8</span>
+              <div class="chart-bar bar-expense" style="--v:4.8"></div>
+            </div>
+          </div>
+          <div class="chart-group">
+            <div class="bar-wrap"><span>8,2</span>
+              <div class="chart-bar bar-income" style="--v:8.2"></div>
+            </div>
+            <div class="bar-wrap"><span>5,6</span>
+              <div class="chart-bar bar-expense" style="--v:5.6"></div>
+            </div>
+          </div>
+          <div class="chart-group">
+            <div class="bar-wrap"><span>8,0</span>
+              <div class="chart-bar bar-income" style="--v:8.0"></div>
+            </div>
+            <div class="bar-wrap"><span>5,9</span>
+              <div class="chart-bar bar-expense" style="--v:5.9"></div>
+            </div>
+          </div>
+          <div class="chart-group">
+            <div class="bar-wrap"><span>8,5</span>
+              <div class="chart-bar bar-income" style="--v:8.5"></div>
+            </div>
+            <div class="bar-wrap"><span>5,2</span>
+              <div class="chart-bar bar-expense" style="--v:5.2"></div>
+            </div>
+          </div>
+        </div>
+        <div class="chart-labels">
+          <span>Jun</span><span>Jul</span><span>Agu</span><span>Sep</span><span>Okt</span><span>Nov</span></div>
+      </section>
+      <section class="card grow-1">
+        <h2 style="margin-bottom:8px">Terbaru</h2>
+        <ul class="tx-list">
+          <li class="tx"><span class="avatar bg-peach">M</span>
+            <div class="tx-info"><b>Makan siang warteg</b><small>Makan</small></div><span class="amount">-
+              Rp35.000</span>
+          </li>
+          <li class="tx"><span class="avatar bg-lavender">T</span>
+            <div class="tx-info"><b>Ojek online</b><small>Transport</small></div><span class="amount">- Rp22.000</span>
+          </li>
+          <li class="tx"><span class="avatar bg-pink">H</span>
+            <div class="tx-info"><b>Langganan streaming</b><small>Hiburan</small></div><span class="amount">-
+              Rp54.000</span>
+          </li>
+          <li class="tx"><span class="avatar bg-mint">F</span>
+            <div class="tx-info"><b>Proyek freelance</b><small>Freelance</small></div><span class="amount in">+
+              Rp500.000</span>
+          </li>
+          <li class="tx"><span class="avatar bg-yellow">B</span>
+            <div class="tx-info"><b>Belanja bulanan</b><small>Belanja</small></div><span class="amount">-
+              Rp410.000</span>
+          </li>
+        </ul>
+      </section>
+    </div>
+  </main>
+</body>
+
+</html>

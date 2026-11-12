@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Tambah kategori · Cuanis</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif&family=DM+Sans:wght@400;500;700&family=Caveat:wght@600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<!-- Opsional: kalau mau pakai Tailwind di halaman ini, aktifkan baris di bawah (letakkan setelah style.css)
+<script src="https://cdn.tailwindcss.com"></script> -->
+</head>
+<body>
+<header class="site-header"><div class="topbar">
+  <nav class="nav eyebrow" aria-label="Menu utama"><a href="dashboard.html">Dashboard</a><a href="transaksi.html">Transaksi</a><a href="budget.html">Budget</a><a href="kategori.html" aria-current="page">Kategori</a></nav>
+  <a class="logo" href="index.html">cuanis</a>
+  <span class="avatar-user" aria-label="Akun Sari">S</span>
+</div></header>
+<main class="container">
+<a class="eyebrow" href="kategori.html" style="align-self:flex-start">← Kembali ke kategori</a><div><div class="eyebrow">Kategori baru</div><h1 style="margin-top:6px">Tambah kategori</h1></div>
+<form class="card card-pink form-card" action="#" method="post">
+  <div class="form-grid">
+    <div><label class="label" for="nama">Nama kategori</label><input class="input" id="nama" name="nama" placeholder="Contoh: Kopi"></div>
+    <div><label class="label" for="tipe">Tipe</label><select class="input" id="tipe" name="tipe"><option>Pengeluaran</option><option>Pemasukan</option></select></div>
+    <div class="full"><label class="label" for="budget">Budget bulanan (Rp)</label><input class="input" id="budget" name="budget" inputmode="numeric" placeholder="Opsional, hanya untuk pengeluaran"></div>
+    <div class="full"><span class="label" id="lbl-warna">Warna</span><div class="swatches" role="radiogroup" aria-labelledby="lbl-warna"><label class="swatch"><input type="radio" name="warna" value="bg-peach" aria-label="Warna bg-peach" checked><span class="bg-peach"></span></label><label class="swatch"><input type="radio" name="warna" value="bg-lavender" aria-label="Warna bg-lavender"><span class="bg-lavender"></span></label><label class="swatch"><input type="radio" name="warna" value="bg-pink" aria-label="Warna bg-pink"><span class="bg-pink"></span></label><label class="swatch"><input type="radio" name="warna" value="bg-mint" aria-label="Warna bg-mint"><span class="bg-mint"></span></label><label class="swatch"><input type="radio" name="warna" value="bg-yellow" aria-label="Warna bg-yellow"><span class="bg-yellow"></span></label></div></div>
+  </div>
+  <div class="form-actions"><a class="btn btn-light" href="kategori.html">Batal</a><button class="btn" type="submit">Simpan kategori</button></div>
+</form>
+</main>
+</body>
+</html>

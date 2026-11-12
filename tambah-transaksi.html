@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Tambah transaksi · Cuanis</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif&family=DM+Sans:wght@400;500;700&family=Caveat:wght@600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<!-- Opsional: kalau mau pakai Tailwind di halaman ini, aktifkan baris di bawah (letakkan setelah style.css)
+<script src="https://cdn.tailwindcss.com"></script> -->
+</head>
+<body>
+<header class="site-header"><div class="topbar">
+  <nav class="nav eyebrow" aria-label="Menu utama"><a href="dashboard.html">Dashboard</a><a href="transaksi.html" aria-current="page">Transaksi</a><a href="budget.html">Budget</a><a href="kategori.html">Kategori</a></nav>
+  <a class="logo" href="index.html">cuanis</a>
+  <span class="avatar-user" aria-label="Akun Sari">S</span>
+</div></header>
+<main class="container">
+<a class="eyebrow" href="transaksi.html" style="align-self:flex-start">← Kembali ke transaksi</a><div><div class="eyebrow">Catatan baru</div><h1 style="margin-top:6px">Tambah transaksi</h1></div>
+<form class="card card-pink form-card" action="#" method="post">
+  <div class="form-grid">
+    <div><label class="label" for="tipe">Tipe</label><select class="input" id="tipe" name="tipe"><option>Pengeluaran</option><option>Pemasukan</option></select></div>
+    <div><label class="label" for="nominal">Nominal (Rp)</label><input class="input" id="nominal" name="nominal" inputmode="numeric" placeholder="Contoh: 25000"></div>
+    <div><label class="label" for="kategori">Kategori</label><select class="input" id="kategori" name="kategori"><option>Makan</option><option>Transport</option><option>Hiburan</option><option>Belanja</option></select></div>
+    <div><label class="label" for="tanggal">Tanggal</label><input class="input" id="tanggal" name="tanggal" type="date" value="2026-11-10"></div>
+    <div class="full"><label class="label" for="catatan">Catatan</label><input class="input" id="catatan" name="catatan" placeholder="Opsional, misal: makan siang warteg"></div>
+  </div>
+  <div class="form-actions"><a class="btn btn-light" href="transaksi.html">Batal</a><button class="btn" type="submit">Simpan transaksi</button></div>
+</form>
+</main>
+</body>
+</html>

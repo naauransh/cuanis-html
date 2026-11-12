@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Atur Budget & Target · Cuanis</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif&family=DM+Sans:wght@400;500;700&family=Caveat:wght@600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<!-- Tailwind CSS CDN -->
+<script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+<header class="site-header"><div class="topbar">
+  <nav class="nav eyebrow" aria-label="Menu utama">
+    <a href="dashboard.html">Dashboard</a>
+    <a href="transaksi.html">Transaksi</a>
+    <a href="budget.html" aria-current="page">Budget</a>
+    <a href="kategori.html">Kategori</a>
+  </nav>
+  <a class="logo" href="index.html">cuanis</a>
+  <span class="avatar-user" aria-label="Akun Sari">S</span>
+</div></header>
+
+<main class="container">
+  <a class="eyebrow" href="budget.html" style="align-self:flex-start">← Kembali ke budget</a>
+  <div>
+    <div class="eyebrow">Pengaturan keuangan</div>
+    <h1 style="margin-top:6px">Atur Budget & Target</h1>
+  </div>
+
+  <form class="card card-pink form-card" action="budget.html" method="get" style="max-width: 100%;">
+    <h2 style="margin-bottom: 20px;">Batas Budget Per Kategori</h2>
+    <div class="form-grid" style="margin-bottom: 32px;">
+      <div>
+        <label class="label" for="budget-makan">Budget Makan (Rp)</label>
+        <input class="input" id="budget-makan" name="budget_makan" inputmode="numeric" value="1500000" required>
+      </div>
+      <div>
+        <label class="label" for="budget-transport">Budget Transport (Rp)</label>
+        <input class="input" id="budget-transport" name="budget_transport" inputmode="numeric" value="600000" required>
+      </div>
+      <div>
+        <label class="label" for="budget-hiburan">Budget Hiburan (Rp)</label>
+        <input class="input" id="budget-hiburan" name="budget_hiburan" inputmode="numeric" value="300000" required>
+      </div>
+      <div>
+        <label class="label" for="budget-belanja">Budget Belanja (Rp)</label>
+        <input class="input" id="budget-belanja" name="budget_belanja" inputmode="numeric" value="800000" required>
+      </div>
+    </div>
+
+    <hr style="border: 0; border-top: 2px dashed var(--line); margin: 24px 0;">
+
+    <h2 style="margin-bottom: 20px;">Target Tabungan</h2>
+    <div class="form-grid">
+      <div class="full">
+        <label class="label" for="nama-target">Nama Target / Impian</label>
+        <input class="input" id="nama-target" name="nama_target" value="Laptop baru" required>
+      </div>
+      <div>
+        <label class="label" for="terkumpul">Sudah Terkumpul (Rp)</label>
+        <input class="input" id="terkumpul" name="terkumpul" inputmode="numeric" value="3200000" required>
+      </div>
+      <div>
+        <label class="label" for="target-total">Total Target (Rp)</label>
+        <input class="input" id="target-total" name="target_total" inputmode="numeric" value="8000000" required>
+      </div>
+    </div>
+
+    <div class="form-actions" style="margin-top: 32px;">
+      <a class="btn btn-light" href="budget.html">Batal</a>
+      <button class="btn" type="submit">Simpan Perubahan</button>
+    </div>
+  </form>
+</main>
+
+<footer class="site-footer" style="text-align: center; margin-top: 40px;">
+  © 2026 Cuanis · Dompet manis untuk uang yang rapi
+</footer>
+</body>
+</html>
